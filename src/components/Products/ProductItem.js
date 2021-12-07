@@ -4,7 +4,7 @@ import Card from '../UI/Card';
 import './ProductItem.css';
 
 const ProductItem = (props) => {
-  const [, dispatch] = useStore();
+  const [, dispatch] = useStore(false);
   const toggleFavHandler = () => {
     dispatch('TOGGLE_FAV', props.id);
   };
